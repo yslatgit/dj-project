@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子模板</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% block abs %}
+    <ul>循环内容</ul>
+    {% for i in abs_data %}
+        <li>{{ i.capitalize }}</li>
+    {% endfor %}
+{% endblock abs %}
+{% block defaut %}
+<p>自己添加的</p>
+{% endblock defaut %}
+</body>
+</html>
