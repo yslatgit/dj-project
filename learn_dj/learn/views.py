@@ -64,7 +64,32 @@ def select_all(request):
     context['name']=name_list
 
     context1['data'] = list(ret1)
-
+    context1['msg'] = '数据正常返回'
+    context1['code'] = 200
     # return render(request,'all.html',context)
     # 返回字典类型的数据
     return JsonResponse(context1,safe=False)
+
+def ajax(request):
+    '''渲染ajax入口页面'''
+    return render(request,'ajax2.html')
+
+def ajax_action1(request):
+    '''点击ajax修改内容按钮'''
+    data = {}
+    ret = User.objects.values()
+    data['code'] = 200
+    data['msg'] = '正常调用'
+    data['data'] = list(ret)
+    return JsonResponse(data,safe=False)
+
+def ajax_action2(request,id):
+    """输入字母出现联想词"""
+    ret = User.objects.filter(id=id)
+    code = ret[0].code
+    ret1 = User.objects.filter(code=code)
+    name_list = []
+    for i in ret1:
+        name_list.append(i.name)
+        name_list.append(" ")
+    return HttpResponse(name_list)

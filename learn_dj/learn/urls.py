@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.conf.urls import url
-from learn import views
+from . import views
 
 urlpatterns =  [
     url(r'^index/$',views.index),
@@ -12,4 +12,7 @@ urlpatterns =  [
     url(r'^select_all/$',views.select_all),
     url(r'^add_user/$',views.add_user),
     url(r'^del_user/(\d*)$',views.delete_user),
+    url(r'^ajax/$', views.ajax),
+    url(r'^ajax.json1$', views.ajax_action1),
+    url(r'^ajax.json2/(.*)$', views.ajax_action2),
 ]

@@ -8,6 +8,7 @@ class LEARN(models.Model):
 
 class User(models.Model):
     name = models.CharField(max_length=20)
+    code = models.CharField(max_length=20,default='a')
     pwd = models.IntegerField(max_length=20)
 
     class Meta:
