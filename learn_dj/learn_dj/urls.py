@@ -20,5 +20,6 @@ from django.conf.urls import include,url
 urlpatterns = [
     path('admin/', admin.site.urls),
     # url(r'^$',include('learn.urls')),
-    path('learn/',include('learn.urls')),
+    path('learn/',include('learn.urls',namespace='ysl')),
+    # url(r'^say$', views.say),
 ]

@@ -1,7 +1,8 @@
 #coding:utf-8
 from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
-from learn.models import LEARN,User
+from .models import LEARN,User
+from django.urls import reverse
 # from templates import *
 # Create your views here.
 
@@ -93,3 +94,8 @@ def ajax_action2(request,id):
         name_list.append(i.name)
         name_list.append(" ")
     return HttpResponse(name_list)
+
+def say(request):
+    """根据路由名称返回具体路径"""
+    url = reverse('ysl:index')
+    return HttpResponse(url)

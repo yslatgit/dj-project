@@ -2,8 +2,10 @@ from django.contrib import admin
 from django.conf.urls import url
 from . import views
 
+app_name = '[learn]'
+
 urlpatterns =  [
-    url(r'^index/$',views.index),
+    url(r'^index/$',views.index,name='index'),
     url(r'^page/',views.page),
     url(r'^test/',views.test,name='test_page'),
     url(r'^child/',views.child),
@@ -15,4 +17,5 @@ urlpatterns =  [
     url(r'^ajax/$', views.ajax),
     url(r'^ajax.json1$', views.ajax_action1),
     url(r'^ajax.json2/(.*)$', views.ajax_action2),
-]
+    url(r'^say$', views.say),
+    ]
