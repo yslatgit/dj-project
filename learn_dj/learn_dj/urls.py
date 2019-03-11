@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include,url
+from django.conf.urls.static import static  #部署到服务器时---静态文件的访问-方法2
+from .settings import STATIC_URL
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # url(r'^$',include('learn.urls')),
     path('learn/',include('learn.urls',namespace='ysl')),
     # url(r'^say$', views.say),
-]
+] + static(STATIC_URL,document_root='learn/staticfiles') #静态文件路径配置
