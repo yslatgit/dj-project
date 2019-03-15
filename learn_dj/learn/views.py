@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
 from .models import LEARN,User
 from django.urls import reverse
+import json
 # from templates import *
 # Create your views here.
 
@@ -32,15 +33,23 @@ def default(request):
     return render(request,'form.html')
 
 def add_user(request):
-
+    """增加post请求参数校验--数据在body中"""
     try:
         name = User.objects.get(name=request.POST['user'])
         if name:
             return HttpResponse('该用户已存在！')
     except:
-        test = User(name=request.POST['user'],pwd=request.POST['pwd'])
-        test.save()
-        return HttpResponse('添加用户信息成功！')
+        if request.POST:
+            name = request.POST['user']
+            pwd = request.POST['pwd']
+            if name and pwd:
+                test = User(name=name,pwd=pwd)
+                test.save()
+                return HttpResponse('添加用户信息成功！')
+            else:
+                return HttpResponse('请检查参数')
+        else:
+            return HttpResponse('方法错误')
 
 def delete_user(request,id):
     '''根据ID删除数据1.根据位置参数传递2.根据名称传递(?P<v1>\d+)'''
@@ -99,3 +108,11 @@ def say(request):
     """根据路由名称返回具体路径"""
     url = reverse('ysl:index')
     return HttpResponse(url)
+
+def get(request):
+    """GET请求参数验证"""
+    print(request.GET)
+    if request.GET:
+        return HttpResponse(request.GET['params'])
+    else:
+        return HttpResponse("请求方式错误")
