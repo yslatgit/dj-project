@@ -3,6 +3,8 @@ from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
 from .models import LEARN,User
 from django.urls import reverse
+import os
+from django.conf import settings
 import json
 # from templates import *
 # Create your views here.
@@ -116,3 +118,17 @@ def get(request):
         return HttpResponse(request.GET['params'])
     else:
         return HttpResponse("请求方式错误")
+
+def uploadPic(request):
+    return render(request,'uploadPic.html')
+
+def uploadPicHandle(request):
+    if request.method == "POST":
+        pic = request.FILES['pic']
+        picName = '%s/%s'%(settings.MEDIA_DIR[0],pic)
+        with open(picName,'wb') as f:
+            for c in pic.chunks():
+                f.write(c)
+        return HttpResponse('<img src="/static/medias/%s">'%pic)
+    else:
+        return HttpResponse('方法错误')

@@ -19,4 +19,6 @@ urlpatterns =  [
     url(r'^ajax.json2/(.*)$', views.ajax_action2),
     url(r'^say$', views.say),
     url(r'^get$', views.get),
+    url(r'^uploadPic$', views.uploadPic),
+    url(r'^uploadPicHandle$', views.uploadPicHandle),
     ]
