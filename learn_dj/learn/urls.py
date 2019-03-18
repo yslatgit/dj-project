@@ -18,7 +18,10 @@ urlpatterns =  [
     url(r'^ajax.json1$', views.ajax_action1),
     url(r'^ajax.json2/(.*)$', views.ajax_action2),
     url(r'^say$', views.say),
-    url(r'^get$', views.get),
-    url(r'^uploadPic$', views.uploadPic),
-    url(r'^uploadPicHandle$', views.uploadPicHandle),
+    url(r'^get/$', views.get),
+    url(r'^uploadPic/$', views.uploadPic),
+    url(r'^uploadPicHandle/$', views.uploadPicHandle),
+    url(r'^citybase/$', views.citybase),
+    url(r'^pro/$', views.pro),
+    url(r'^city/(\d+)/$', views.city),
     ]

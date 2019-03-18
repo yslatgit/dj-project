@@ -1,7 +1,7 @@
 #coding:utf-8
 from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
-from .models import LEARN,User
+from .models import *
 from django.urls import reverse
 import os
 from django.conf import settings
@@ -120,6 +120,7 @@ def get(request):
         return HttpResponse("请求方式错误")
 
 def uploadPic(request):
+    """上传图片"""
     return render(request,'uploadPic.html')
 
 def uploadPicHandle(request):
@@ -132,3 +133,22 @@ def uploadPicHandle(request):
         return HttpResponse('<img src="/static/medias/%s">'%pic)
     else:
         return HttpResponse('方法错误')
+
+def citybase(request):
+    """js实现省市县三级联动"""
+    return render(request,'testJs.html')
+
+def pro(request):
+    ret = City.objects.filter(depart__isnull=True).values('id','cname')
+    list = []
+    for data in ret:
+        list.append([data['id'],data['cname']])
+    return JsonResponse({'ret':list})
+
+def city(request,id):
+    id = int(id)
+    ret = City.objects.filter(depart=id).values('id','cname')
+    list = []
+    for data in ret:
+        list.append([data['id'], data['cname']])
+    return JsonResponse({'ret': list})

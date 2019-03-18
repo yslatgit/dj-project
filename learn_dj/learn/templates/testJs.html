@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js练习</title>
+    <script src="/static/jquery.min.js"></script>
+    <script>
+        //等待页面加载完成
+        $(function () {
+            //根据ID获得select对象
+            pro = $("#pro");
+            //查询出省信息--遍历--加到select
+            $.get("/learn/pro/",function (data) {
+                $.each(data.ret,function (index,item) {
+                    pro.append("<option  value="+item[0]+">"+item[1]+"</option>");
+                });
+            });
+            //查询市的信息
+            $("#pro").change(function () {
+                $.get("/learn/city/" + $(this).val() + "/", function (data) {
+                    city = $("#city");
+                    city.empty().append('<option  value="">请选择市</option>');
+                    $("#area").empty().append('<option  value="">请选择区</option>');
+                    $.each(data.ret, function (index, item) {
+                        city.append("<option  value=" + item[0] + ">" + item[1] + "</option>");
+                    });
+                });
+            });
+            //查询区信息
+            $("#city").change(function () {
+                $.get("/learn/city/" + $(this).val() + "/", function (data) {
+                    area = $("#area");
+                    $.each(data.ret, function (index, item) {
+                        area.append("<option  value=" + item[0] + ">" + item[1] + "</option>");
+                    });
+                });
+            });
+        });
+
+    </script>
+</head>
+<body>
+<select id="pro">
+    <option  value="">请选择省</option>
+</select>
+<select id="city">
+    <option  value="">请选择市</option>
+</select>
+<select id="area">
+    <option  value="">请选择区</option>
+</select>
+</body>
+</html>

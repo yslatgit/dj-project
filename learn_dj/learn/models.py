@@ -13,3 +13,11 @@ class User(models.Model):
 
     class Meta:
         db_table='user'
+
+class City(models.Model):
+    """城市关系类"""
+    cname = models.CharField(max_length=20)
+    depart = models.IntegerField(max_length=11)
+
+    class Meta:
+        db_table='city'
