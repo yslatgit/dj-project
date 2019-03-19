@@ -23,5 +23,6 @@ urlpatterns =  [
     url(r'^uploadPicHandle/$', views.uploadPicHandle),
     url(r'^citybase/$', views.citybase),
     url(r'^pro/$', views.pro),
+    url(r'^cache/$', views.cache_redis),
     url(r'^city/(\d+)/$', views.city),
     ]

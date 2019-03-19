@@ -5,6 +5,8 @@ from .models import *
 from django.urls import reverse
 import os
 from django.conf import settings
+from django.views.decorators.cache import cache_page
+from django.core.cache import cache
 import json
 # from templates import *
 # Create your views here.
@@ -152,3 +154,11 @@ def city(request,id):
     for data in ret:
         list.append([data['id'], data['cname']])
     return JsonResponse({'ret': list})
+
+# 缓存练习
+def cache_redis(request):
+    data = {"姓名":"杨松林"}
+    data = json.dumps(data)
+    cache.set('key',data,60*2)
+    v = cache.get('key')
+    return HttpResponse(v)

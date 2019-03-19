@@ -138,3 +138,16 @@ STATICFILES_DIRS = [
 MEDIA_DIR = [
     os.path.join(BASE_DIR, 'learn/staticfiles/medias')
 ]
+
+# 配置缓存--用redis
+CACHES = {
+    "default":{
+        "BACKEND":"redis_cache.cache.RedisCache",
+        "LOCATION":"10.0.12.218:6379",
+        "TIMEOUT":60,
+        "OPTIONS":{
+                "CLIENT_CLASS": "django_redis.client.DefaultClient",
+                "PASSWORD": "123456",
+        }
+    }
+}
