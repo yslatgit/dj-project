@@ -22,6 +22,8 @@ from .settings import STATIC_URL
 urlpatterns = [
     path('admin/', admin.site.urls),
     # url(r'^$',include('learn.urls')),
-    path('learn/',include('learn.urls',namespace='ysl')),
+    path('learn/',include('learn.urls',namespace='learn')),
+    path('interface/',include('interface.urls',namespace='interface')),
+    path('bank/',include('bank.urls',namespace='bank')),
     # url(r'^say$', views.say),
 ] + static(STATIC_URL,document_root='learn/staticfiles') #静态文件路径配置

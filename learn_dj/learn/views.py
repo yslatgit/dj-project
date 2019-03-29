@@ -15,18 +15,18 @@ def index(request):
     context = {}
     context['name']='ysl'
     # return HttpResponse('HELLO WORLD!')
-    return render(request,'index.html',context)
+    return render(request,'learn/index.html',context)
 
 def test(request):
     return HttpResponse('TEST!')
 
 def page(request):
     context={"name":"ysl","dj":"Django"}
-    return render(request,'page.html',context)
+    return render(request,'learn/page.html',context)
 
 def child(request):
     context={"abs_data":["selenium","appium","django"]}
-    return render(request,'child.html',context)
+    return render(request,'learn/child.html',context)
 
 def db_add(request):
     test1 = LEARN(name='ysl')
@@ -34,7 +34,7 @@ def db_add(request):
     return HttpResponse('数据库添加数据成功！')
 
 def default(request):
-    return render(request,'form.html')
+    return render(request,'learn/form.html')
 
 def add_user(request):
     """增加post请求参数校验--数据在body中"""
@@ -86,7 +86,7 @@ def select_all(request):
 
 def ajax(request):
     '''渲染ajax入口页面'''
-    return render(request,'ajax2.html')
+    return render(request,'learn/ajax2.html')
 
 def ajax_action1(request):
     '''点击ajax修改内容按钮'''
@@ -123,7 +123,7 @@ def get(request):
 
 def uploadPic(request):
     """上传图片"""
-    return render(request,'uploadPic.html')
+    return render(request,'learn/uploadPic.html')
 
 def uploadPicHandle(request):
     if request.method == "POST":
@@ -138,7 +138,7 @@ def uploadPicHandle(request):
 
 def citybase(request):
     """js实现省市县三级联动"""
-    return render(request,'testJs.html')
+    return render(request,'learn/testJs.html')
 
 def pro(request):
     ret = City.objects.filter(depart__isnull=True).values('id','cname')
