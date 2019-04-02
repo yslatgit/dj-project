@@ -1,0 +1,12 @@
+$TTL 1D
+@                IN SOA  ysl.com. root.ysl.com (
+                                        2      ; serial
+                                        1D      ; refresh
+                                        1H      ; retry
+                                        1W      ; expire
+                                        3H     ; minimum
+                                          )
+@                 IN      NS     dns
+dns              IN      A       10.0.12.218
+www              IN      A       10.0.12.218           
+aaa              IN      A       10.0.12.54

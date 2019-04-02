@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'learn_dj.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'bank',
+        'NAME': 'learn_dj',
         'USER': 'root',
         'PASSWORD': 'root',
         'HOST': 'localhost',
