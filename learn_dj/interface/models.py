@@ -20,6 +20,7 @@ class Apis(models.Model):
         verbose_name_plural='接口管理'
 
 class Types(models.Model):
+    # types_id = models.IntegerField(primary_key=True,default=1,verbose_name='主键')
     TYPE_CHOICES = ((0,'超级管理员'),(1,'管理员'),(2,'导师'),(3,'成员'),(4,'游客'))
     name = models.CharField(max_length=20,verbose_name='名称')
     email = models.EmailField(max_length=30,null=True,blank=True)
@@ -31,3 +32,4 @@ class Types(models.Model):
 
     class Meta:
         verbose_name='人员'
+        verbose_name_plural='人员管理'
