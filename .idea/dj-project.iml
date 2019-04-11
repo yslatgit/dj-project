@@ -13,7 +13,7 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/learn_dj/interface/data_operation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/learn_dj/apps/interface/data_operation" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

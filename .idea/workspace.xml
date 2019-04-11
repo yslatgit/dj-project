@@ -1,13 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b26d27ac-07d2-4c1d-aa66-e67d6848476b" name="Default" comment="缓存到redis练习">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learn_dj/interface/test_operation/tests.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/test_operation/yinyong.py" afterPath="" />
+    <list default="true" id="b26d27ac-07d2-4c1d-aa66-e67d6848476b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/apps.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/apps.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/data_operation/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/data_operation/data_for_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/migrations/0002_auto_20190401_1558.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/test_mock.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/test_operation/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/test_operation/test_api.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/test_operation/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/apps.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/staticfiles/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/staticfiles/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/staticfiles/medias/杨松林.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/staticfiles/s.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/views.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dj-project.iml" afterPath="$PROJECT_DIR$/.idea/dj-project.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn_dj/interface/models.py" afterPath="$PROJECT_DIR$/learn_dj/interface/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn_dj/learn/models.py" afterPath="$PROJECT_DIR$/learn_dj/learn/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn_dj/learn_dj/settings.py" afterPath="$PROJECT_DIR$/learn_dj/learn_dj/settings.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/learn_dj/bank/__init__.py" afterPath="$PROJECT_DIR$/learn_dj/apps/__init__.py" />
     </list>
     <ignored path="dj-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,67 +75,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn_dj/interface/models.py">
+        <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+            <state relative-caret-position="391">
+              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn_dj/interface/views.py">
+      <file leaf-file-name="0001_initial.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/migrations/0001_initial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_for_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn_dj/interface/data_operation/data_for_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="18" column="76" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="76" />
+            <state relative-caret-position="-513">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn_dj/interface/urls.py">
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+            <state relative-caret-position="285">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="2" selection-end-line="22" selection-end-column="87" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn_dj/interface/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-              <folding>
-                <element signature="e#1275#1290#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn_dj/interface/test_operation/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
-              <folding>
-                <element signature="e#1275#1290#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -108,33 +107,9 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn_dj/learn_dj/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="34" column="24" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="24" />
+            <state relative-caret-position="-665">
+              <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../Lib/site-packages/django/contrib/auth/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-190">
-              <caret line="287" column="18" selection-start-line="287" selection-start-column="6" selection-end-line="287" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn_dj/learn/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -163,7 +138,6 @@
         <option value="$PROJECT_DIR$/learn_dj/learn/views.py" />
         <option value="$PROJECT_DIR$/learn_dj/bank/admin.py" />
         <option value="$PROJECT_DIR$/learn_dj/interface/admin.py" />
-        <option value="$PROJECT_DIR$/learn_dj/learn_dj/settings.py" />
         <option value="$PROJECT_DIR$/learn_dj/interface/test_operation/test_api.py" />
         <option value="$PROJECT_DIR$/learn_dj/interface/urls.py" />
         <option value="$PROJECT_DIR$/learn_dj/interface/views.py" />
@@ -172,6 +146,9 @@
         <option value="$PROJECT_DIR$/learn_dj/interface/models.py" />
         <option value="$PROJECT_DIR$/learn_dj/interface/test_operation/yinyong.py" />
         <option value="$PROJECT_DIR$/learn_dj/learn/models.py" />
+        <option value="$PROJECT_DIR$/learn_dj/learn_dj/settings.py" />
+        <option value="$PROJECT_DIR$/learn_dj/apps/interface/models.py" />
+        <option value="$PROJECT_DIR$/learn_dj/apps/interface/admin.py" />
       </list>
     </option>
   </component>
@@ -182,8 +159,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="452" />
-    <option name="y" value="92" />
+    <option name="x" value="60" />
+    <option name="y" value="62" />
     <option name="width" value="1351" />
     <option name="height" value="838" />
   </component>
@@ -212,7 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -230,9 +206,28 @@
               <option name="myItemId" value="dj-project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dj-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learn_dj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dj-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dj-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -240,24 +235,25 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/AutoTest-1" />
+    <property name="last_opened_file_path" value="E:/20190410/auto_mfapp" />
     <property name="js-jscs-nodeInterpreter" value="D:\node\node.exe" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\12121212\env\dj-01\Scripts\dj-project\learn_dj" />
-      <recent name="E:\12121212\env\dj-01\Scripts\dj-project" />
-      <recent name="E:\12121212\env\dj-01\Scripts\dj-project\learn_dj\learn\staticfiles" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\12121212\env\dj-01\Scripts\dj-project\learn_dj\interface\test_operation" />
       <recent name="E:\12121212\env\dj-01\Scripts\dj-project\learn_dj\learn\staticfiles" />
       <recent name="E:\12121212\env\dj-01\Scripts\dj-project\conf" />
       <recent name="E:\12121212\env\dj-01\Scripts\dj-project\learn_dj\learn\templates" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\12121212\env\dj-01\Scripts\dj-project\learn_dj\apps" />
+      <recent name="E:\12121212\env\dj-01\Scripts\dj-project\learn_dj" />
+      <recent name="E:\12121212\env\dj-01\Scripts\dj-project" />
+      <recent name="E:\12121212\env\dj-01\Scripts\dj-project\learn_dj\learn\staticfiles" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.tests">
+  <component name="RunManager" selected="Django server.dj">
     <configuration default="false" name="data_for_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -281,7 +277,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn_dj/interface" />
+      <option name="WORKING_DIRECTORY" value="E:\12121212\env\dj-01\Scripts\dj-project\learn_dj\apps\interface" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -705,7 +701,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552993866734</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="接口测试练习">
+      <created>1554867926789</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1554867926790</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -750,28 +753,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="452" y="92" width="1351" height="838" extended-state="0" />
-    <editor active="true" />
+    <frame x="60" y="62" width="1351" height="838" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2556158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29512006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18333334" sideWeight="0.49308437" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@dj-project" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4141844" sideWeight="0.51045704" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27307692" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28085107" sideWeight="0.49723375" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4794326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24941905" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28652483" sideWeight="0.49723375" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4141844" sideWeight="0.489543" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@dj-project" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4794326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4141844" sideWeight="0.489543" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -793,7 +796,8 @@
     <MESSAGE value="增加上传图片的接口" />
     <MESSAGE value="省市区三级联动" />
     <MESSAGE value="缓存到redis练习" />
-    <option name="LAST_COMMIT_MESSAGE" value="缓存到redis练习" />
+    <MESSAGE value="接口测试练习" />
+    <option name="LAST_COMMIT_MESSAGE" value="接口测试练习" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -810,20 +814,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Lib/site-packages/django/urls/resolvers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Lib/site-packages/django/core/handlers/exception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python3.7/Lib/socketserver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -875,14 +865,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn_dj/learn/staticfiles/medias/正面.jpg" />
     <entry file="file://$PROJECT_DIR$/learn_dj/learn/medias/自拍.jpg" />
-    <entry file="file://$PROJECT_DIR$/learn_dj/learn/staticfiles/jquery.js">
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/learn/staticfiles/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/learn/staticfiles/jquery.min.js">
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/learn/staticfiles/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -948,7 +938,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/bank/admin.py">
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/bank/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
@@ -962,21 +952,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/interface/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/learn/views.py">
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/learn/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
           <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/learn/urls.py">
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/learn/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="15" column="25" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="25" />
@@ -990,21 +973,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/interface/test_operation/test_api.py">
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/test_operation/test_api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/bank/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/interface/__init__.py">
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1012,65 +988,61 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learn_dj/yinyong.py" />
-    <entry file="file://$PROJECT_DIR$/learn_dj/bank/apps.py">
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/bank/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/interface/apps.py">
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/interface/views.py">
+    <entry file="file://$PROJECT_DIR$/../../Lib/site-packages/django/contrib/auth/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        <state relative-caret-position="1653">
+          <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/interface/data_operation/data_for_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="18" column="76" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/learn_dj/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/interface/models.py">
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/learn/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-          <folding />
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#28#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/interface/tests.py">
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/test_operation/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+          <folding>
+            <element signature="e#1275#1290#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding>
-            <element signature="e#1275#1290#0" expanded="true" />
+            <element signature="e#1275#1290#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/interface/urls.py">
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
@@ -1078,33 +1050,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/learn/models.py">
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/data_operation/data_for_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="18" column="76" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn_dj/interface/test_operation/tests.py">
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/bank/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
-          <folding>
-            <element signature="e#1275#1290#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-319">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Lib/site-packages/django/contrib/auth/models.py">
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/learn/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="287" column="18" selection-start-line="287" selection-start-column="6" selection-end-line="287" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="76">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_dj/learn_dj/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-665">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="2" selection-end-line="22" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
