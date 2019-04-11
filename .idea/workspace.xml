@@ -2,47 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b26d27ac-07d2-4c1d-aa66-e67d6848476b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/bank/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/data_operation/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/data_operation/data_for_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/migrations/0002_auto_20190401_1558.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/test_mock.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/test_operation/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/test_operation/test_api.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/test_operation/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/interface/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/staticfiles/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/staticfiles/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/staticfiles/medias/杨松林.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/staticfiles/s.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn_dj/learn/views.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dj-project.iml" afterPath="$PROJECT_DIR$/.idea/dj-project.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn_dj/learn_dj/settings.py" afterPath="$PROJECT_DIR$/learn_dj/learn_dj/settings.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/learn_dj/bank/__init__.py" afterPath="$PROJECT_DIR$/learn_dj/apps/__init__.py" />
     </list>
     <ignored path="dj-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,8 +47,8 @@
       <file leaf-file-name="0001_initial.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/migrations/0001_initial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-513">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="380">
+              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -708,7 +668,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554867926790</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="将项目放到apps">
+      <created>1554951286021</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1554951286021</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -754,9 +721,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="60" y="62" width="1351" height="838" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29512006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29512006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18333334" sideWeight="0.49308437" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="manage.py@dj-project" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4141844" sideWeight="0.51045704" order="7" side_tool="true" content_ui="tabs" />
@@ -797,7 +764,8 @@
     <MESSAGE value="省市区三级联动" />
     <MESSAGE value="缓存到redis练习" />
     <MESSAGE value="接口测试练习" />
-    <option name="LAST_COMMIT_MESSAGE" value="接口测试练习" />
+    <MESSAGE value="将项目放到apps" />
+    <option name="LAST_COMMIT_MESSAGE" value="将项目放到apps" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1110,8 +1078,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn_dj/apps/interface/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="380">
+          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
           <folding />
         </state>
       </provider>
