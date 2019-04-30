@@ -1,0 +1,37 @@
+{% extends 'learn/s.html' %}
+{% load staticfiles %}
+{% block body %}
+    <form action="/learn/form/" method="post" autocomplete="off">
+        <label>用户名</label><input name="username" id="account_1" type="text" placeholder="手机号/邮箱" /><br/>
+        <label>密&nbsp;&nbsp;&nbsp;码</label><input name="password" id="password_1" type="text" placeholder="密码" /><br/>
+        <input name="" id="" type="submit" value="立即注册" /><br/>
+
+        <div>{% for key,error in forms_data.errors.items %}{{ error }}{% endfor %}{{ msg }}</div>
+    {% csrf_token %}
+    </form>
+{#    <input name="" id="jsLoginBtn" type="submit" value="立即注册ajax" /><br/>#}
+{% endblock %}
+{% block custom_js %}
+    <script type="text/javascript">
+    function form_auth() {
+         username = $('input[name=username]')[0].value;
+         password = $('input[name=password]')[0].value;
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"{% url 'learn:form' %}",
+            data:{'username':username,password:password},
+            async:true,
+            beforeSend:function (xhr,settings) {
+                xhr.setRequestHeader('X-CSRFToken','{{ csrf_token }}')
+            },
+            success:function (data) {
+                alert(data.msg)
+            }
+        })
+    }
+    $('#jsLoginBtn').on('click',function () {
+        form_auth()
+    })
+    </script>
+{% endblock %}

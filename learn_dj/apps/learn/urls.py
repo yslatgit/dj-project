@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.conf.urls import url
 from . import views
+from .views import FormTest,LoginView
 
 app_name = '[learn]'
 
@@ -25,4 +26,7 @@ urlpatterns =  [
     url(r'^pro/$', views.pro),
     url(r'^cache/$', views.cache_redis),
     url(r'^city/(\d+)/$', views.city),
+    url(r'^city/(\d+)/$', views.city),
+    url('^form/$',FormTest.as_view(),name='form'),
+    url('^login/$',LoginView.as_view(),name='login')
     ]

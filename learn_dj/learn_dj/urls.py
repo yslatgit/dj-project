@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include,url
 from django.conf.urls.static import static  #部署到服务器时---静态文件的访问-方法2
+from django.views.static import serve
 from .settings import STATIC_URL
 
 urlpatterns = [
@@ -25,5 +26,8 @@ urlpatterns = [
     path('learn/',include('learn.urls',namespace='learn')),
     path('interface/',include('interface.urls',namespace='interface')),
     path('bank/',include('bank.urls',namespace='bank')),
+    path('yoyo/',include('yoyo.urls',namespace='yoyo')),
+    url('^static/(?P<path>.*)$',serve,{'document_root':STATIC_URL},name='static'),
     # url(r'^say$', views.say),
-] + static(STATIC_URL,document_root='learn/staticfiles') #静态文件路径配置
+]
+# + static(STATIC_URL,document_root='learn/staticfiles') #静态文件路径配置

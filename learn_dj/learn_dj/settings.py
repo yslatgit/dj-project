@@ -40,13 +40,14 @@ INSTALLED_APPS = [
     'learn',
     'interface',
     'bank',
+    'yoyo',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -156,3 +157,17 @@ CACHES = {
         }
     }
 }
+#发送邮件
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = '986725186@qq.com'
+EMAIL_HOST_PASSWORD = 'sesgsightsnkbfii'
+EMAIL_FROM = 'ysl<986725816@qq.com>'
+# EMAIL_HOST = "smtp.sina.com"
+# EMAIL_PORT = 25
+# EMAIL_HOST_USER = "projectsedu@sina.com"
+# EMAIL_HOST_PASSWORD = "admin123"
+# EMAIL_USE_TLS= False
+# EMAIL_FROM = "projectsedu@sina.com"

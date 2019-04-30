@@ -8,6 +8,9 @@ from django.conf import settings
 from django.views.decorators.cache import cache_page
 from django.core.cache import cache
 import json
+from django.views.generic import View
+from .forms import UserForm
+from django.contrib.auth.hashers import make_password,check_password
 # from templates import *
 # Create your views here.
 
@@ -95,7 +98,7 @@ def ajax_action1(request):
     data['code'] = 200
     data['msg'] = '正常调用'
     data['data'] = list(ret)
-    return JsonResponse(data,safe=False)
+    return render(request,'learn/s.html')
 
 def ajax_action2(request,id):
     """输入字母出现联想词"""
@@ -162,3 +165,34 @@ def cache_redis(request):
     cache.set('key',data,60*2)
     v = cache.get('key')
     return HttpResponse(v)
+
+#form表单验证
+class FormTest(View):
+    def get(self,request):
+        forms_data = UserForm()
+        return render(request,'learn/form_auth.html',{'forms_data':forms_data})
+    def post(self,requset):
+        forms_data = UserForm(requset.POST)
+        if forms_data.is_valid():
+            username = requset.POST.get('username','')
+            password = requset.POST.get('password','')
+            user = User()
+            user.name = username
+            user.pwd = make_password(password)
+            user.save()
+            return render(requset,'learn/form_auth.html',{'msg':'已保存'})
+        else:
+            return render(requset, 'learn/form_auth.html', {'forms_data':forms_data})
+
+class LoginView(View):
+    def get(self,request):
+        return render(request,'learn/login.html')
+
+    def post(self,request):
+        username = request.POST.get('username','')
+        user = User.objects.filter(name=username).first()
+        pwd2 = request.POST.get('password','')
+        if check_password(pwd2,user.pwd):
+            return render(request,'learn/login.html',{'msg':'登录成功'})
+        else:
+            return render(request, 'learn/login.html', {'msg': '登录失败'})
