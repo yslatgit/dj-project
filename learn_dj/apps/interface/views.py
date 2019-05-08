@@ -3,7 +3,10 @@ from django.http import HttpResponse,JsonResponse
 from .models import Apis
 from django.core import serializers
 # from .tests import post_main
+from django.views.generic import View
 import json
+
+from .test_operation.performFunc import req
 
 def get(request):
     data = {}
@@ -51,3 +54,21 @@ def change_casestatus(request,id):
     data.save()
     return HttpResponse("测试通过")
 
+class InterfaceTestView(View):
+    def get(self,request):
+        data = Apis.objects.all()
+        return render(request,'learn/interface.html',{'datas':data})
+
+    def post(self,request):
+        rid = request.POST.get("id")
+        testdata = Apis.objects.filter(id=rid).values()
+        method = testdata[0]['apimethod']
+        url = testdata[0]['apiurl']
+        params = eval(testdata[0]['apiparam'])
+        msg = req(method,url,params)
+        if msg == 200:
+            data = Apis.objects.get(id=rid)
+            data.apistatus = 1
+            data.save()
+        data = Apis.objects.all()
+        return render(request,'learn/interface.html',{'datas':data,'msg':msg})

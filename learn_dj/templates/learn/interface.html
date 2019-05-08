@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>接口列表</title>
+</head>
+<script src="/static/jquery.min.js"></script>
+<script type="text/javascript">
+    function performTest(val){
+        $.ajax({
+            "cache":false,
+            "url":"{% url 'interface:index' %}",
+            "type":"POST",
+            "data":{"id":val},
+            beforeSend:function (xhr,settings) {
+                xhr.setRequestHeader('X-CSRFToken','{{ csrf_token }}')
+            },
+            "sucess":function(data){
+                if(data.msg == 200){
+                    windows.reload()
+                }
+            },
+            "error":function(){alert("测试失败")}
+        })
+    }
+{#    $('#jsbtn').on('click',function(){#}
+{#        performTest()#}
+{#    })#}
+
+</script>
+<body>
+{#    {% url 'interface:index' %}#}
+    <table>
+        <tr><th><div><input type="checkbox"></div></th><th><div style="width:auto">接口名称</div></th><th><div style="width:auto">接口地址</div></th><th><div style="width:auto">请求方法</div></th><th><div style="width:auto">是否通过</div></th></tr>
+        {% for data in datas %}
+        <tr><td><button id="jsbtn" onclick="performTest({{ data.id }})" value="{{ data.id }}">执行测试</button></td><td><div style="width:auto">{{ data.apiname }}</div></td><td><div style="width:auto">{{ data.apiurl }}</div></td><td><div style="width:auto">{{ data.apimethod }}</div></td><th><div style="width:auto">{{ data.apistatus }}</div></th></tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -3,6 +3,7 @@ from django.core.mail import send_mail
 from learn_dj.settings import EMAIL_FROM
 import random
 
+
 def get_str(str_length=8):
     str = ''
     strChar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'

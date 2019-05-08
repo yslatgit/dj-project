@@ -11,6 +11,8 @@ import json
 from django.views.generic import View
 from .forms import UserForm
 from django.contrib.auth.hashers import make_password,check_password
+from django.contrib.auth import login,logout,authenticate
+from django.contrib.auth.models import User as U
 # from templates import *
 # Create your views here.
 
@@ -196,3 +198,25 @@ class LoginView(View):
             return render(request,'learn/login.html',{'msg':'登录成功'})
         else:
             return render(request, 'learn/login.html', {'msg': '登录失败'})
+
+class LoginAuthView(View):
+    """dj42"""
+    def get(self,request):
+        return render(request,'learn/login_auth.html')
+
+    def post(self,request):
+        username = request.POST.get('username','')
+        password = request.POST.get('password', '')
+        user = authenticate(username=username,password=password)
+        if user is not None:
+            login(request,user)
+            request.session['user']=username#dj43
+            return render(request,'learn/login_auth.html',{'msg':'登录成功'})
+        else:
+            return render(request, 'learn/login_auth.html', {'msg': '登录失败'})
+
+class LogoutAuthView(View):
+    """dj42"""
+    def get(self,request):
+        logout(request)
+        return HttpResponse('成功退出')

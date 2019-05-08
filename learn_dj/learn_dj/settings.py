@@ -138,11 +138,11 @@ APPEND_SLASH=False
 STATIC_URL = '/static/'
 # 静态文件配置--方法1
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'learn/staticfiles')
+    os.path.join(BASE_DIR,'apps/learn/staticfiles')
 ]
 
 MEDIA_DIR = [
-    os.path.join(BASE_DIR, 'learn/staticfiles/medias')
+    os.path.join(BASE_DIR, 'apps/learn/staticfiles/medias')
 ]
 
 # 配置缓存--用redis
@@ -171,3 +171,20 @@ EMAIL_FROM = 'ysl<986725816@qq.com>'
 # EMAIL_HOST_PASSWORD = "admin123"
 # EMAIL_USE_TLS= False
 # EMAIL_FROM = "projectsedu@sina.com"
+
+#增加日志配置
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django.db.backends': {
+            'handlers': [],
+            'level': 'DEBUG' if DEBUG else 'INFO',
+        },
+    },
+}
